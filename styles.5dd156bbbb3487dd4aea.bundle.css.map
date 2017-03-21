@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/styles.css"],"names":[],"mappings":"AAEA,KACE,eAAiB","file":"styles.5dd156bbbb3487dd4aea.bundle.css","sourcesContent":["/* You can add global styles to this file, and also import other style files */\n\nbody {\n  background: #222;\n}\n\n\n\n// WEBPACK FOOTER //\n// ./src/styles.css"],"sourceRoot":""}
