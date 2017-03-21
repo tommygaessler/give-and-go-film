@@ -1,0 +1,101 @@
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: inline;
+  margin-right: 50px;
+}
+
+header h4 {
+  margin-left: 50px;
+}
+
+nav a {
+  display: inline-block;
+  text-align: center;
+  transition: all .2s;
+  padding-right: 30px;
+}
+nav a:last-child {
+  padding-right: 0;
+}
+nav a {
+  color: #FFF;
+  text-decoration: none;
+  transition: all .3s;
+}
+nav a:hover {
+  color: #DDD;
+}
+
+.logo {
+  display: inline;
+  color: white;
+  margin: 0;
+}
+
+#nav-bg {
+  background: #222;
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.backgound-image {
+  position: relative;
+  background-image: url("../assets/images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  z-index: 2;
+}
+
+.background-content {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-content h1, .background-content p {
+  color: white;
+  margin: 0;
+}
+
+.background-content p {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.background-content h1 {
+  text-transform: uppercase;
+}
+
+main {
+  background-color: white;
+  height: 100vh;
+}
+
+p {
+  margin-top: 0;
+}
+
+main .row {
+  margin-top: 100px;
+}
