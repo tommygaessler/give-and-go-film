@@ -30,8 +30,9 @@
 				<h3 *ngIf="error">{{ error }}</h3>
 				<form class="form-horizontal" (ngSubmit)="reserve()" *ngIf="!response">
 				  <div class="form-group has-error">
-				    <div class="col-sm-7 col-sm-offset-1">
+				    <div class="col-sm-7 col-sm-offset-1 email-input">
 				      <input type="text" class="form-control" placeholder="lebron@cavs.com" [(ngModel)]="email" name="email">
+							<i class="fa fa-times" aria-hidden="true" *ngIf="emailError"></i>
 				    </div>
 						<div class="col-sm-3">
 				      <button type="submit" class="btn btn-danger btn-block"><span *ngIf="!loading">Reserve</span><span *ngIf="loading"><i class="fa fa-circle-o-notch fa-spin"></i></span></button>

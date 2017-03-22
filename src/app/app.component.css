@@ -121,3 +121,15 @@ main p {
 .form-group.has-error {
   margin-bottom: 0;
 }
+
+.email-input {
+  position: relative;
+}
+
+.email-input i {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  color: #e51c23;
+  font-size: 20px;
+}

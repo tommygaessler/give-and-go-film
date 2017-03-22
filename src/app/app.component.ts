@@ -14,6 +14,7 @@ export class AppComponent {
   response: string;
   error: string;
   loading: boolean = false;
+  emailError: boolean = false;
 
   constructor(private http: Http) {
 
@@ -49,6 +50,7 @@ export class AppComponent {
     const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     if(emailRegex.test(this.email)) {
+      this.emailError = false;
       this.loading = true;
       this.http.post(`https://ujj9l4tjj6.execute-api.us-east-1.amazonaws.com/prod/give-and-go-film-reserve`, {email: this.email, FNAME: null, LNAME: null}).map((response:Response) => response.json()).subscribe((response) => {
         this.response = response.body;
@@ -56,6 +58,8 @@ export class AppComponent {
         this.loading = false;
         this.error = error.body;
       });
+    } else {
+      this.emailError = true;
     }
   }
 }
