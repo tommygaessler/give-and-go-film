@@ -89,11 +89,14 @@ p {
 
 main {
   background-color: white;
-  /*height: 100vh;*/
 }
 
 p {
   margin-top: 0;
+}
+
+img {
+  width: 100%;
 }
 
 main .row {
