@@ -87,6 +87,16 @@ p {
   text-transform: uppercase;
 }
 
+.background-content .container {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+
+.background-content .container h4 {
+  color: white;
+}
+
 main {
   background-color: white;
 }
@@ -135,4 +145,28 @@ main p {
   right: 15px;
   color: #e51c23;
   font-size: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .background-content p {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  .background-content p {
+    font-size: 20px;
+  }
+
+  .background-content .container h4 {
+    font-size: 20px;
+  }
 }
